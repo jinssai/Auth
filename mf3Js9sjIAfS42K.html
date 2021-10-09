@@ -8,10 +8,30 @@
  p.logo img {
     width: 180px;  
 }
+HTML CSSResult Skip Results Iframe
+EDIT ON
+.wrapper{
+    height: 100%;
+    min-height: 100vh;
+    position: relative;/*←相対位置*/
+    padding-bottom: 120px;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
  </style>
 </head>
 <body>
- <b><big>システムメンテナンス中</big></b><br>
+    <div class="wrapper">
+    <div class="container">
+      <p><b><big>システムメンテナンス中</big></b><br>
  <p>日頃より当サイトをご利用いただき、誠にありがとうございます。</p>
  <p>現在システムメンテナンスのため、こちらのページはご利用いただけません。</p>
  <p>ご不便をお掛け致しますが、ご理解いただきますようお願い申し上げます。メンテナンスはいつか終わる予定です。</p><br>
@@ -19,14 +39,14 @@
  <p><small>Thank you for using this site.</small></p>
  <p><small>This page is currently unavailable due to system maintenance.</small></p>
  <p><small>We apologize for any inconvenience, and thank you for your understanding. Maintenance will end someday.</small></p>
- <!-- footer --> 
- <footer>
-  <hr>
-  <div style="text-align: center">
+    </div>
+    <footer>
+       <div style="text-align: center">
   <p class="logo">
     <img src="https://jinssai.github.io/Authorization/site-logo.svg" alt="logo:JINSSAI.svg">
   </p> 
   <small>© 2021 jinssai inc.All rights Reserved.</small>
-</footer>
+    </footer>
+  </div>
 </body>
 </html>
