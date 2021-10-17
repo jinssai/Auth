@@ -1,0 +1,273 @@
+
+<!DOCTYPE HTML>
+<html lang='ja'>
+<head>
+<meta charset="UTF-8">
+<!--
+-
+-
+-
+Accessing this website with scripts or programs is stricly prohibited.
+All violating IPs will be blacklisted.
+This document is protected by the copyright law.
+Modification, publishing and redistribution of this document are prohibited.
+-
+-
+-
+-->
+<meta property="og:image" content="https://www.numberempire.com/images/sharing-thumbnail.jpeg">
+<meta property="og:url" content="http://ja.numberempire.com/numberfactorizer.php">
+<meta property="og:title" content="素因数分解 - integer factorization up to 70 digits">
+<meta property="og:description" content="素因数分解 - integer factorization up to 70 digits">
+  <meta name="description" content="素因数分解ツールは、単一の自然数、または自然数に+,-,*,/,^,!の演算子を含む式により表現される数の素因数分解を表します。">
+<style>body{margin-top:0;font-family:sans-serif;line-height:150%;}input{margin:5px;}td.b1{font-weight:bold;text-align:center;}td.b{font-weight:bold;text-align:right;padding-right:0.5em;}a.n{color:green;}a.r{color:blue;}a.ne{color:orange;}a.el{color:gray;font-size:x-small;}a.tex{font-size:small;font-family:arial, sans-serif;}a:hover{text-decoration:underline;}a{text-decoration:none;}.text{font-size:medium;}h1, h2, h3{margin:0.2em;}a.gl{color:gray;text-decoration:none}td.result{font-size:large;}#user_history{position:absolute;visibility:hidden;top:30px;right:20px;left:20px;background-color:#F0F0F0;border:1px solid #000;padding:10px;text-align:center;}img.control:hover{cursor:pointer;}a.author{color:gray;}a.menu{padding:10px;display:block;background-color:#eee;border-radius:10px;margin:10px;min-width:17em;}.left{text-align:left;}.center{text-align:center;}table.center, div.center{margin:0 auto;}.right{text-align:right;}.justify{text-align:justify;}.wide{width:100%;}.right{float:right;}table.cellpadding3 td{padding:3px;}table.cellpadding10 td{padding:10px;}.gray{color:gray;}img{border:0;}table.border, table.border td{border:1px solid black;border-collapse:collapse;}.nowrap{white-space:nowrap;}.hidden{visibility:hidden;}.middle{vertical-align:middle;}table.main{max-width:1100px;width:100%;}input.full_width{width:80%;}input.full_width_60{width:60%;}input.full_width_20{width:20em;}div.full_width{width:80%;}.icon:hover{cursor:pointer;}.shadow{box-shadow:4px 4px 12px 2px #808080;border-radius:8px;margin:5px auto 12px auto;padding:4px;}input[type='number']{-moz-appearance:textfield;}input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{-webkit-appearance:none;}#perm_ad{min-height:280px;}.table{display:table;}.section{padding:5px 0;}.warn{border-radius:25px;border:10px solid black;padding:20px;background-color:white;}@-webkit-keyframes blinker{from{opacity:1.0;}to{opacity:0.0;}}.blink{animation-name:blinker;animation-duration:0.75s;animation-iteration-count:infinite;animation-timing-function:ease-in-out;animation-direction:alternate;animation-name:blinker;-moz-animation-duration:0.75s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:ease-in-out;-moz-animation-direction:alternate;-webkit-animation-name:blinker;-webkit-animation-duration:0.75s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:ease-in-out;-webkit-animation-direction:alternate;}.tooltip{background-color:#FFA9B5;padding:10px;position:absolute;border-radius:10px;font-size:small;border:solid 1px red;}.tooltip::after{content:" ";position:absolute;top:100%;left:50%;margin-left:-5px;border-width:5px;border-style:solid;border-color:red transparent transparent transparent;}.copy-tooltip{position:absolute;background-color:rgba(255, 255, 255, 255);padding:8px 12px;border-radius:5px;font-size:12px;color:#555;opacity:0;transition:transform 0.5s ease-in-out, opacity 1s ease-in-out;box-shadow:3px 3px 3px 0 #ddd;border:solid 1px green;z-index:1;}.copy-tooltip-arrow-left::after{content:" ";position:absolute;top:50%;right:100%;margin-top:-5px;border-width:5px;border-style:solid;border-color:transparent green transparent transparent;}.copy-tooltip-arrow-right::after{content:" ";position:absolute;top:50%;left:100%;margin-top:-5px;border-width:5px;border-style:solid;border-color:transparent transparent transparent green;}img.logo{transition:opacity 3s;opacity:1;}img.logo:hover{opacity:0;}table.results{border-collapse:collapse;text-align:left;margin:10px auto;}div.results{padding:10px 0;}table.results th{background-color:#DBEEE7;padding:10px;white-space:nowrap;text-align:center;}table.results td{background-color:#E9FEF9;border-top:1px solid gray;padding:10px;}table.results tr:hover td{background-color:#F4FEFC;}table.resutls tr{border:1px solid white;}table.results tr:first-child th:first-child{border-top-left-radius:20px;}table.results tr:first-child th:last-child{border-top-right-radius:20px;}table.results tr:last-child td:first-child{border-bottom-left-radius:20px;}table.results tr:last-child td:last-child{border-bottom-right-radius:20px;}table.results tr:last-child th:first-child{border-bottom-left-radius:20px;}table.results tr:last-child th:last-child{border-bottom-right-radius:20px;}.ac-renderer{position:absolute;background:#eee;border:1px solid #ddd;-moz-box-shadow:2px 2px 2px rgba(102, 102, 102, .4);-webkit-box-shadow:2px 2px 2px rgba(102, 102, 102, .4);width:300px;}.ac-row{cursor:pointer;font-size:0.8em;color:#333;padding:.4em;}.ac-highlighted{font-weight:bold;}.ac-active{color:#eb8f00;border:1px solid #fbd850;background-color:#fff;}.banner{border:3px solid #FF750B;margin:7px;border-radius:20px;padding:20px;text-align:center;display:block;color:black;}.banner:hover{background:#FFC59B;text-decoration:none;}</style>
+<link rel='alternate' hreflang='de' href='https://de.numberempire.com/numberfactorizer.php' />
+<link rel='alternate' hreflang='en' href='https://www.numberempire.com/numberfactorizer.php' />
+<link rel='alternate' hreflang='es' href='https://es.numberempire.com/numberfactorizer.php' />
+<link rel='alternate' hreflang='fr' href='https://fr.numberempire.com/numberfactorizer.php' />
+<link rel='alternate' hreflang='it' href='https://it.numberempire.com/numberfactorizer.php' />
+<link rel='alternate' hreflang='nl' href='https://nl.numberempire.com/numberfactorizer.php' />
+<link rel='alternate' hreflang='pl' href='https://pl.numberempire.com/numberfactorizer.php' />
+<link rel='alternate' hreflang='pt' href='https://pt.numberempire.com/numberfactorizer.php' />
+<link rel='alternate' hreflang='ru' href='https://ru.numberempire.com/numberfactorizer.php' />
+<link rel='alternate' hreflang='zh' href='https://zh.numberempire.com/numberfactorizer.php' />
+<link rel='alternate' hreflang='ja' href='https://ja.numberempire.com/numberfactorizer.php' />
+<link rel='alternate' hreflang='ko' href='https://ko.numberempire.com/numberfactorizer.php' />
+<title>素因数分解 - integer factorization up to 70 digits</title>
+<script>
+  var lang = 'ja';
+  var url = "https:\/\/ja.numberempire.com\/numberfactorizer.php";
+  var tr_parentheses_do_not_match = "\u958b\u62ec\u5f27\u3068\u9589\u62ec\u5f27\u306e\u6570\u304c\u4e00\u81f4\u3057\u307e\u305b\u3093\u3002\u5165\u529b\u3057\u305f\u5f0f\u3092\u78ba\u8a8d\u3057\u3066\u4e0b\u3055\u3044\u3002";
+  var tr_empty_string = "\u6570\u5f0f\u3092\u5165\u529b\u3057\u3066\u4e0b\u3055\u3044\u3002\u4f55\u3082\u5165\u529b\u3055\u308c\u3066\u3044\u306a\u3044\u304b\u3001\u6570\u5f0f\u304c\u7121\u52b9\u306b\u306a\u3063\u3066\u3044\u307e\u3059\u3002";
+  var tr_function = "\u95a2\u6570";
+  var tr_invalid_exp = "\u5f0f\u304c\u7121\u52b9\u3067\u3059";
+  var tr_not_recognized = "\u306f\u8a8d\u8b58\u3067\u304d\u307e\u305b\u3093\u3002\u5165\u529b\u3057\u305f\u5f0f\u3092\u78ba\u8a8d\u3057\u3066\u4e0b\u3055\u3044\u3002";
+  var tr_apply_diff_rule = "\u5fae\u5206\u898f\u5247\u306e\u9069\u7528";
+  var tr_simplify_exp = "\u5f0f\u306e\u7c21\u7565\u5316";
+  var tr_final_simpl_canon = "\u6700\u7d42\u7684\u306a\u7c21\u7565\u5316\u30fb\u898f\u7bc4\u5316";
+  var tr_disable_adblock = "\u5e83\u544a\u30d6\u30ed\u30c3\u30ab\u30fc\u3092\u89e3\u9664\u3057\u3066\u4e0b\u3055\u3044\u3002";
+  var tr_loading_js = "\u8aad\u307f\u8fbc\u307f\u4e2d\u3067\u3059\u3002\u3057\u3070\u3089\u304f\u304a\u5f85\u3061\u4e0b\u3055\u3044\u3002";
+	var tr_max_field_length_reached = "\u5165\u529b\u6570\u304c\u4e0a\u9650\u3092\u8d85\u3048\u3066\u3044\u307e\u3059\u3002\u6587\u5b57\u6570\u3092\u6e1b\u3089\u3057\u3066\u4e0b\u3055\u3044\u3002";
+  var show_banners = true;
+	var alt_banner = "<a class='banner' href='https:\/\/www.nutritionvalue.org\/diary.php?utm_source=ref-webqc'>Forget 2020. Get control of 2021!<br>Track your food intake, exercise, sleep and meditation for free.<\/a>";
+    var is_cookie_policy_required = false;
+  var tr_consent_header = "\u901a\u77e5";
+  var tr_consent_text = "\u3053\u306eWeb\u30b5\u30a4\u30c8\u306f\u5206\u6790\u3001\u30bf\u30fc\u30b2\u30c6\u30a3\u30f3\u30b0\u3001\u30d1\u30fc\u30bd\u30ca\u30e9\u30a4\u30ba\u306a\u3069\u306e\u91cd\u8981\u306a\u30b5\u30a4\u30c8\u6a5f\u80fd\u3092\u6709\u52b9\u306b\u3059\u308b\u305f\u3081\u3001Cookie\u3092\u4f7f\u7528\u3057\u307e\u3059\u3002 \u3053\u306e\u901a\u77e5\u3092\u9589\u3058\u308b\u304b\u7834\u68c4\u3059\u308b\u304b\u3001\u30da\u30fc\u30b8\u4e0a\u306e\u30ea\u30f3\u30af\u307e\u305f\u306f\u30dc\u30bf\u30f3\u3092\u30af\u30ea\u30c3\u30af\u3057\u3066\u3001Cookie\u3092\u4f5c\u6210\u3057\u307e\u3059\u3002\u8a73\u3057\u304f\u306f\u3001 <a href='\/privacypolicy.php'>\u30d7\u30e9\u30a4\u30d0\u30b7\u30fc\u30dd\u30ea\u30b7\u30fc<\/a>\u3092\u5fa1\u89a7\u304f\u3060\u3055\u3044\u3002";
+  var tr_accept = "\u53d7\u3051\u5165\u308c\u308b";
+  var tr_customize = "\u30ab\u30b9\u30bf\u30de\u30a4\u30ba";
+  var tr_necessary = "\u5fc5\u8981";
+  var tr_preferences = "\u597d\u304d";
+  var tr_statistics = "\u7d71\u8a08\u5b66";
+  var tr_marketing = "\u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0";
+  var tr_withdraw_cookie_consent_confirmation = "Cookie\u306b\u540c\u610f\u3057\u307e\u305b\u3093\u3067\u3057\u305f\u3002 \u300cOK\u300d\u3092\u30af\u30ea\u30c3\u30af\u3057\u3066\u30da\u30fc\u30b8\u3092\u30ea\u30ed\u30fc\u30c9\u3057\u307e\u3059\u3002";
+  var ad_msgs = ["\u5e83\u544a\u304c\u90aa\u9b54\u304b\u3082\u3057\u308c\u307e\u305b\u3093\u304c\u3001\u5e83\u544a\u306a\u3057\u3067\u306f\u904b\u55b6\u3067\u304d\u307e\u305b\u3093\u3002\u3054\u4e86\u627f\u4e0b\u3055\u3044\u3002","\u3053\u306e\u30b5\u30a4\u30c8\u306f\u5f79\u306b\u7acb\u3061\u307e\u3057\u305f\u3067\u3057\u3087\u3046\u304b\u3002\u30b5\u30a4\u30c8\u306e\u904b\u55b6\u306b\u3054\u5354\u529b\u304f\u3060\u3055\u3044\u3002","\u3053\u306e\u30b5\u30a4\u30c8\u306f\u5e83\u544a\u53ce\u5165\u3067\u6210\u308a\u7acb\u3063\u3066\u3044\u307e\u3059\u3002","\u5229\u7528\u8005\u306e\u65b9\u3005\u3078\uff1a\u3053\u306e\u30b5\u30a4\u30c8\u306f\u5e83\u544a\u7121\u3057\u3067\u306f\u904b\u55b6\u51fa\u6765\u307e\u305b\u3093\u3002\u3054\u5354\u529b\u3092\u304a\u9858\u3044\u81f4\u3057\u307e\u3059\u3002"];
+  (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+  function checkInput(){};
+  function setInput(){};
+  function copyToClipboard(){};
+</script><script src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' async></script>
+</head>
+<body>
+<div id='translations'></div>
+<table class='center zero main' id='main'>
+<tr id='top_sandbar'><td  class='center'>
+<table class='zero wide'><tr>
+<td class='left' style='width: 85%'>
+    <a href='/' >ホーム</a>
+    <span class='gray'>|</span>
+          <a href='#menu' >メニュー</a>
+      <span class=gray>|</span>
+        <a href='/getinvolved.php'>共有</a>
+    			    <span class=gray>|</span>
+   		<a href='javascript:load_javascript(translations_file);void(0);'>
+					翻訳修正</a>
+		    <td class='right' style='width: 15%; min-width: 100px'>
+    <span title='このページを評価する'><img id='star1' alt='1' src='/images/graystar.png' width='20' height='20'><img id='star2' alt='2' src='/images/graystar.png' width='20' height='20'><img id='star3' alt='3' src='/images/graystar.png' width='20' height='20'><img id='star4' alt='4' src='/images/graystar.png' width='20' height='20'><img id='star5' alt='5' src='/images/graystar.png' width='20' height='20'></span>
+<script>
+var tr_comment = "\u30b3\u30e1\u30f3\u30c8\u3092\u6b8b\u3057\u3066\u9802\u3051\u307e\u305b\u3093\u304b?";
+</script>
+</td>
+</tr>
+</table></td></tr>
+<tr class='center'><td>
+	<div class='perm_ad'>
+<!-- NE-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7891406799955373"
+     data-ad-slot="1562322018"
+     data-ad-format="auto" ></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script>
+ var top_banner_shown = 42;
+</script>
+</div>
+</td></tr>
+<tr><td  class='center' id='toplink'>
+</td></tr>
+<tr class='center'><td ><h1>素因数分解</h1>
+</td></tr>
+<tr><td  class='center'>
+<form  name='form1' action='numberfactorizer.php' method='post' onsubmit='showLoader();'>
+<label>
+  素因数分解する数を入力してください:<br>
+  <input autofocus autocomplete='off' type='text' id='number' name='number' maxlength='99' value='' class='full_width_60' onchange='checkInput(this);' onkeyup='checkInput(this);'>
+</label>
+	<span id='number-limit-indicator' style='color:gray;'>0 / 70</span>
+<input type='submit' value='素因数分解する'>
+</form>
+</td></tr>
+<tr><td class='center'>
+	<div class="full_width shadow justify table">
+  <strong>素因数分解ツール</strong>は、単一の自然数、または自然数に+,-,*,/,^,!の演算子を含む式により表現される数の素因数分解を表します。
+		<p id='ops_and_funs'>
+<a id='ops_and_funs_switch' href='javascript:switchHelp();void(0);'>数式の書式を表示</a>
+</p>
+	</div>
+</td></tr>
+	<tr class='center'><td>&nbsp;</td></tr>
+	<tr><td class='center' >
+		<h3>因数分解の例</h3>
+	</td></tr>
+<tr><td class='center'>
+<table class='cellpadding10' style='width: 80%; margin: 0 auto'>
+<tr>
+<td class='center'>
+<form action='numberfactorizer.php' method='post'>
+<input type='text' readonly='readonly' name='number' size='25' value='987654321'>
+<input type='submit' value='例 1'>
+</form>
+</td>
+<td class='center'>
+<form action='numberfactorizer.php' method='post'>
+<input type='text' readonly='readonly' name='number' size='25' value='30!+1'>
+<input type='submit' value='例 2'>
+</form>
+</td>
+</tr>
+<tr>
+<td class='center'>
+<form action='numberfactorizer.php' method='post'>
+<input type='text' readonly='readonly' name='number' size='25' value='2*3*5*7-1'>
+<input type='submit' value='例 3'>
+</form>
+</td>
+<td class='center'>
+<form action='numberfactorizer.php' method='post'>
+<input type='text' readonly='readonly' name='number' size='25' value='2^100-1'>
+<input type='submit' value='例 4'>
+</form>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr class='center'><td>
+	<!-- Number Empire -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7891406799955373"
+     data-ad-slot="5536397997"
+     data-ad-format="auto" ></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</td></tr>
+	<tr><td>
+		<table class='wide center'>
+<tr><td class='text center' id='menu'><h3>数学ツール</h3><br>
+  <table class='center'><tr><td class='left' style='width: 250px;'>
+    <a class='menu' href='/derivativecalculator.php' >微分電卓</a>
+<a class='menu' href='/integralcalculator.php' >積分電卓</a>
+<a class='menu' href='/definiteintegralcalculator.php' >積分計算</a>
+<a class='menu' href='/limitcalculator.php' >極限の計算</a>
+<a class='menu' href='/seriescalculator.php' >級数計算機</a>
+<a class='menu' href='/equationsolver.php' >方程式を解く</a>
+<a class='menu' href='/simplifyexpression.php' >式の簡略化</a>
+<a class='menu' href='/factoringcalculator.php' >因数分解</a>
+<a class='menu' href='/expressioncalculator.php' >計算機</a>
+<a class='menu' href='/inversefunctioncalculator.php' >逆関数</a>
+<a class='menu' href='/taylorseriesexpansion.php' >テイラー級数</a>
+<a class='menu' href='/matrixcalculator.php' >行列計算機</a>
+<a class='menu' href='/matrixbinarycalculator.php' >行列演算</a>
+<a class='menu' href='/graphingcalculator.php' >グラフ計算機</a>
+  </td><td style='width: 100px;'></td><td class='left' style='width: 250px;'>
+    <a class='menu' href='/2d_shape_calculators.php' >2次元図形の求積</a>
+<a class='menu' href='/3d_shape_calculators.php' >3次元図形の求積</a>
+<a class='menu' href='/primenumbers.php' >素数</a>
+<a class='menu' href='/numberfactorizer.php' >素因数分解</a>
+<a class='menu' href='/fibonaccinumbers.php' >フィボナッチ数</a>
+<a class='menu' href='/bernoullinumbers.php' >ベルヌーイ数</a>
+<a class='menu' href='/eulernumbers.php' >オイラー数</a>
+<a class='menu' href='/complexnumberscalculator.php' >複素数</a>
+<a class='menu' href='/factorialcalculator.php' >階乗</a>
+<a class='menu' href='/gammafunctioncalculator.php' >ガンマ関数</a>
+<a class='menu' href='/combinatorialcalculator.php' >組み合わせ数の計算機</a>
+<a class='menu' href='/fractionscalculator.php' >分数計算機</a>
+<a class='menu' href='/statisticscalculator.php' >統計計算機</a>
+<a class='menu' href='/latexequationeditor.php' >LaTeXの数式エディタ</a>
+  </td></tr></table>
+</td></tr>
+<tr><td class='center'>
+<form action='.' method='post'>
+<h3>数の性質</h3>
+<input type='text' pattern="\d*" id='n' name='n' placeholder='整数を入力して下さい。' title='整数を入力して下さい。' required class='full_width_60' style='text-align:center;' maxlength='80'>
+<span id='n-limit-indicator' style='color:gray;'>0 / 12</span>
+<input type='submit' value='検索'>
+</form>
+例:
+<a href='/3628800'>3628800</a>,
+<a href='/9876543211'>9876543211</a>,
+<a href='/12586269025'>12586269025</a>
+<br>
+  </td></tr>
+  <tr><td class='text center' id='menu'><a href='https://ja.webqc.org' target='_blank'>化学ツール</a>
+  </td></tr>
+</table>
+	</td></tr>
+<tr class='center'><td >
+	<a href="/addtoyourwebsite.php">数学ツールをあなたのサイトに</a>
+</td></tr>
+<tr><td></td></tr>
+<tr class='center'><td>
+<b>他の言語</b>:
+        <a href='https://de.numberempire.com/numberfactorizer.php' hreflang='de' rel='alternate'>Deutsch</a>
+            <a href='https://www.numberempire.com/numberfactorizer.php' hreflang='en' rel='alternate'>English</a>
+            <a href='https://es.numberempire.com/numberfactorizer.php' hreflang='es' rel='alternate'>Español</a>
+            <a href='https://fr.numberempire.com/numberfactorizer.php' hreflang='fr' rel='alternate'>Français</a>
+            <a href='https://it.numberempire.com/numberfactorizer.php' hreflang='it' rel='alternate'>Italiano</a>
+            <a href='https://nl.numberempire.com/numberfactorizer.php' hreflang='nl' rel='alternate'>Nederlands</a>
+            <a href='https://pl.numberempire.com/numberfactorizer.php' hreflang='pl' rel='alternate'>Polski</a>
+            <a href='https://pt.numberempire.com/numberfactorizer.php' hreflang='pt' rel='alternate'>Português</a>
+            <a href='https://ru.numberempire.com/numberfactorizer.php' hreflang='ru' rel='alternate'>Русский</a>
+            <a href='https://zh.numberempire.com/numberfactorizer.php' hreflang='zh' rel='alternate'>中文</a>
+        <b>    <a href='https://ja.numberempire.com/numberfactorizer.php' hreflang='ja' rel='alternate'>日本語</a>
+    </b>        <a href='https://ko.numberempire.com/numberfactorizer.php' hreflang='ko' rel='alternate'>한국어</a>
+    </td>
+</tr>
+<tr><td></td></tr>
+<tr><td><div class='sharing'></div></td></tr>
+<tr><td></td></tr>
+<tr><td class='center m'>
+<a href='/' >数の帝国</a> - 便利な数学ツールを皆様へ | <a class='contact' href='/contact.php'>管理者への問い合わせ</a>
+</td></tr>
+<tr><td></td></tr>
+<tr class='center'><td   class='text'>
+<span class='m gray'>
+このサイトを使用する際には、 <a href='/termsandconditions.php'>利用規約</a>および <a href='/privacypolicy.php'>プライバシーポリシー</a>に同意して下さい。
+<br>&copy; 2021
+numberempire.com
+無断複写・転載を禁じます
+</span><br>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+<script src="/js/105/numberfactorizer.js" async></script>
+<script>
+var translations_file = '/js/tmp/4327a6d9adf14c0ef341a8049a28fc89.js';
+</script><script>function process1(x){var s=0;for(var i = 0; i < x.length; i++) {s += x.charCodeAt(i)}; var input = document.createElement('input'); input.type = 'hidden'; input.name='_p1'; input.value =s; if (document.forms[0]) document.forms[0].appendChild(input)};process1('b9755045d5a40efe5cd302db4df67d1f');</script>
+<br><br>
+</body>
+</html>
