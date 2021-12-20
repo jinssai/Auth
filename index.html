@@ -49,7 +49,7 @@ margin-bottom: 20px;
 <body>
  <div class="login">
 	 <h1>ログイン</h1>
-  <input type="text" id="username" placeholder="ユーザー名"/><br />
+  <input type="text" id="ID" placeholder="ID"/><br />
   <input type="text" id="password" placeholder="パスワード"/><br />
   <button type="button" id="check" onclick="gate()">確認</button><br />
  </div>
@@ -61,9 +61,9 @@ margin-bottom: 20px;
  </footer>
  <script type="text/javascript">
 		function gate(){
-        var username = document.getElementById('username');
+        var ID = document.getElementById('ID');
         var password = document.getElementById('password');
-        location.href = username.value + "/" + password.value + ".html";
+        location.href = ID.value + "/" + password.value + ".html";
     		}
 	</script>
 </body>
